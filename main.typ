@@ -5,10 +5,13 @@
   paper: "a4",
   margin: (top: 20mm, bottom: 20mm, left: 25mm, right: 15mm),
 )
+#show heading: set align(center)
+#show heading.where(level: 1): set text(size: 14pt, weight: "bold")
+
 
 // Базовый шрифт/кегль
 #set text(font: "Times New Roman", size: 12pt)
-#set par(leading: 0.9em)
+#set par(leading: 1.25em)
 
 // Удобная функция "линия для подписи"
 #let signline(len: 30mm) = {
@@ -32,7 +35,7 @@
 #let role_row(role, fio_and_group) = {
   // три колонки: роль | линия | /ФИО/
   grid(
-    columns: (55mm, auto, auto),
+    columns: (55mm, 1fr, auto),
     column-gutter: 6mm,
     align(left)[#role:], align(bottom)[#signline(len: 30mm)], align(left)[\/ #fio_and_group \/],
   )
@@ -47,7 +50,7 @@
 // Функция: строка руководителя с "ФИО, уч. звание и степень"
 #let supervisor_row(role, fio_regalia, underfio: "ФИО, уч. звание и степень") = {
   grid(
-    columns: (55mm, auto, auto),
+    columns: (55mm, 1fr, auto),
     column-gutter: 6mm,
     align(left)[#role], align(bottom)[#signline(len: 30mm)], align(left)[\/ #fio_regalia \/],
   )
@@ -402,7 +405,7 @@
 
 #align(center)[#text(weight: "bold")[АННОТАЦИЯ]]
 
-#set par(justify: true, leading: 1.25em, first-line-indent: 1.25cm)
+#set par(justify: true, leading: 1.5em, first-line-indent: 1.25cm)
 
 #text(weight: "bold")[Наименование работы:] веб-приложение для коллективного обмена знаниями студентов.
 
@@ -417,3 +420,17 @@
 Во Введении изложены цель, задачи, объект и предмет исследования, актуальность, новизна и практическая значимость работы. Первая глава посвящена анализу предметной области систем обмена знаниями, выявлению основных проблем, обзору существующих аналогов и определению требований к системе. Вторая глава описывает проектирование и реализацию веб-приложения: архитектуру клиент-серверного взаимодействия, разработку REST API, проектирование базы данных и пользовательского интерфейса, а также реализацию ключевых модулей (регистрация и авторизация, профиль пользователя, CRUD материалов, поиск и фильтрация, избранное и просмотр материалов). Третья глава посвящена тестированию системы, вопросам информационной безопасности и авторизации, оценке удобства использования, а также возможностям масштабирования платформы (поддержка нескольких вузов, расширение дисциплин и рост базы материалов). В Заключении представлены выводы по выполненной работе и перспективы дальнейшего развития системы.
 
 #pagebreak()
+
+
+#align(center)[#text(weight: "bold")[СОДЕРЖАНИЕ]]
+
+
+#outline(title: "")
+#let vvedenie = {
+  align(center)[#text(weight: "bold")[ВВЕДЕНИЕ]]
+}
+#pagebreak()
+
+// = ВВЕДЕНИЕ
+
+#heading()[ВВЕДЕНИЕ]
