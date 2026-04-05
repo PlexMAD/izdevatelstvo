@@ -10,6 +10,8 @@
 #set enum(number-align: left, body-indent: 0.5em)
 
 #include "pages/title.typ"
+
+#set page(numbering: "1", number-align: center + bottom)
 #include "pages/task.typ"
 #include "pages/plan.typ"
 #include "pages/signatures.typ"
