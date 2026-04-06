@@ -72,6 +72,17 @@
     [Post],
     [id, title, body, subjectId?, userId, createdAt],
     [← Subject (необязательно), ← User, → Attachment, → Favorite],
+  )
+]
+
+#pagebreak()
+
+#par(first-line-indent: 0pt)[Продолжение Таблицы 5]
+#align(center)[#set par(leading: 0.5em)
+  #table(
+    columns: (1fr, 1fr, 1.5fr),
+    align: (left, left, left),
+    [*Сущность*], [*Ключевые поля*], [*Связи*],
 
     [Attachment],
     [id, url, postId],
