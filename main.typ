@@ -18,4 +18,5 @@
 #include "pages/annotation.typ"
 #include "chapters/introduction.typ"
 #include "chapters/chapter1.typ"
+#include "pages/testing.typ"
 #include "pages/video.typ"

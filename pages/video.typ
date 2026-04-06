@@ -2,6 +2,8 @@
 
 #set par(justify: true, leading: 1.25em, first-line-indent: (amount: 1.25em, all: true))
 
+#pagebreak()
+
 #heading(level: 1)[СЦЕНАРИЙ ВИДЕОРОЛИКА ДЛЯ ЗАЩИТЫ ВКР]
 #v(3mm)
 
