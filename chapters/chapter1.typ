@@ -1,8 +1,9 @@
 #import "../styles.typ": myenum
 
+#counter(heading).update(0)
 #set heading(numbering: "1.1")
 
-#heading()[ПРЕДМЕТНАЯ ОБЛАСТЬ И ТЕХНОЛОГИИ]
+#heading()[ПРЕДМЕТНАЯ ОБЛАСТЬ И АНАЛИЗ ТРЕБОВАНИЙ]
 
 == Анализ предметной и проблемной области
 
@@ -207,13 +208,3 @@
   Открыть нежелательную публикацию любого пользователя и удалить её.
 ]
 
-#pagebreak()
-
-#include "architecture.typ"
-
-#pagebreak()
-
-#include "ui_mockups.typ"
-#pagebreak()
-
-#include "maket.typ"
